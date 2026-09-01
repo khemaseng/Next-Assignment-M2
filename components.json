@@ -1,10 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
-<<<<<<< HEAD
   "style": "base-nova",
-=======
   "style": "aria-nova",
->>>>>>> 82e890b (update)
   "rsc": true,
   "tsx": true,
   "tailwind": {
