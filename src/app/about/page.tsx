@@ -1,10 +1,17 @@
- 
- import React from 'react';
+
+import React from 'react';
 import Link from 'next/link';
+import { Plus_Jakarta_Sans } from 'next/font/google';
+
+// Google Sans is distributed as "Plus Jakarta Sans" on Google Fonts
+const googleSans = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+});
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-zinc-950 text-slate-900 dark:text-zinc-100 flex flex-col font-sans">
+    <div className={`${googleSans.className} min-h-screen bg-slate-50 dark:bg-zinc-950 text-slate-900 dark:text-zinc-100 flex flex-col`}>
 
       {/* STORY & MISSION SECTION */}
       <section className="py-20 border-b border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
@@ -14,14 +21,14 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="aspect-4/3 rounded-2xl overflow-hidden border border-slate-200 dark:border-zinc-800 shadow-sm">
                 <img
-                  src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop"
+                  src="https://secure.s.forbestravelguide.com/img/properties/the-modern/the-modern-bar-room.jpg"
                   alt="Kitchen cooking"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="aspect-4/3 rounded-2xl overflow-hidden border border-slate-200 dark:border-zinc-800 shadow-sm">
                 <img
-                  src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800&auto=format&fit=crop"
+                  src="https://hypeandhyper.com/content/images/2023/05/beef-werk-restaurant-matej-hakar-05.jpeg"
                   alt="Chef plating food"
                   className="w-full h-full object-cover"
                 />

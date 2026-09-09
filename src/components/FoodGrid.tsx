@@ -9,6 +9,8 @@ interface FoodGridProps {
   items: FoodItem[];
 }
 
+
+
 export default function FoodGrid({ items }: FoodGridProps) {
   if (items.length === 0) {
     return (

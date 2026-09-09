@@ -1,11 +1,18 @@
- 
- "use client";
+
+"use client";
 
 import { useEffect, useState } from "react";
 import { searchFoods } from "@/services/foodApi";
 import { FoodItem } from "@/types/food";
 import FoodGrid from "@/components/FoodGrid";
 import Loading from "@/components/Loading";
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+// Google Sans is distributed as "Plus Jakarta Sans" on Google Fonts
+const googleSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
 
 export default function FoodsPage() {
   const [foods, setFoods] = useState<FoodItem[]>([]);
@@ -28,7 +35,7 @@ export default function FoodsPage() {
   }, [searchTerm]);
 
   return (
-    <div className="w-full bg-background text-foreground min-h-screen">
+    <div className={`${googleSans.className} w-full bg-background text-foreground min-h-screen`}>
       <main className="container mx-auto px-6 py-10 max-w-7xl">
         {/* Header Section */}
         <div className="mb-8 space-y-1.5">

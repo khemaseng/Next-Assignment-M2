@@ -1,11 +1,17 @@
- 
 
- import React from "react";
+import React from "react";
 import Link from "next/link";
+import { Plus_Jakarta_Sans } from "next/font/google"; 
+
+// Google Sans is distributed as "Plus Jakarta Sans" on Google Fonts
+const googleSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+});
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-zinc-950 text-slate-900 dark:text-zinc-100 flex flex-col font-sans">
+    <div className={`${googleSans.className} min-h-screen bg-slate-50 dark:bg-zinc-950 text-slate-900 dark:text-zinc-100 flex flex-col`}>
       
       {/* SECTION 1: HERO */}
       <section className="relative pt-6 pb-16 md:pt-8 md:pb-20 overflow-hidden bg-background border-b border-slate-200 dark:border-zinc-800">
@@ -57,7 +63,7 @@ export default function Home() {
               <div className="relative grid grid-cols-2 gap-4">
                 <div className="col-span-2 relative aspect-16/10 rounded-2xl overflow-hidden shadow-lg border border-slate-200 dark:border-zinc-800">
                   <img
-                    src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1000&auto=format&fit=crop"
+                    src="https://www.papercitymag.com/wp-content/uploads/2026/01/Night-Rooster-Tablescape-1024x683.jpg"
                     alt="Master Chef Plating Gourmet Dish"
                     className="w-full h-full object-cover"
                   />
@@ -70,7 +76,7 @@ export default function Home() {
 
                 <div className="relative aspect-square rounded-xl overflow-hidden border border-slate-200 dark:border-zinc-800">
                   <img
-                    src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=500&auto=format&fit=crop"
+                    src="https://platform.la.eater.com/wp-content/uploads/sites/26/2025/12/Lead.jpg?quality=90&strip=all&crop=0,0.015620118712903,100,99.968759762574"
                     alt="Ribeye Steak"
                     className="w-full h-full object-cover"
                   />
@@ -105,10 +111,10 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: 'Fresh Seafood', count: '24 Items', img: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=400&auto=format&fit=crop' },
-              { name: 'Gourmet Desserts', count: '18 Items', img: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=400&auto=format&fit=crop' },
+              { name: 'Fresh Seafood', count: '24 Items', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaCV_HqX8xFVnKI7kn3SWiN85_zp3BsHPpoIsRb7LbpImD9_MV89pKOltj&s=10' },
+              { name: 'Fresh Seafood', count: '18 Items', img: 'https://seaconcept.nl/wp-content/uploads/2022/12/seaconcept-handflakad-roodbaars-8-1024x768.jpg' },
               { name: 'Artisanal Pasta', count: '30 Items', img: 'https://images.unsplash.com/photo-1621996346565-e3d5d6281292?q=80&w=400&auto=format&fit=crop' },
-              { name: 'Grilled Meats', count: '15 Items', img: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=400&auto=format&fit=crop' },
+              { name: 'Grilled Meats', count: '15 Items', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIBQ1u7ON4uJ2lcwAfZvx3SaDznmesbVBl9VLLSOIOybGZC4spmhMuJ7k6&s=10' },
             ].map((cat) => (
               <Link
                 key={cat.name}
@@ -143,8 +149,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { id: 1, title: 'Charcoal Grilled Steak', category: 'American', rating: '4.9', img: 'https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=500&auto=format&fit=crop' },
-              { id: 2, title: 'Traditional Pork Ramen', category: 'Japanese', rating: '5.0', img: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=500&auto=format&fit=crop' },
+              { id: 1, title: 'Charcoal Grilled Steak', category: 'American', rating: '4.9', img: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/7c556e105670207.5f7e129c1c96a.jpg' },
+              { id: 2, title: 'Traditional Pork Ramen', category: 'Japanese', rating: '5.0', img: 'https://images.slurrp.com/prod/articles/pcojd5nu3he.webp' },
               { id: 3, title: 'Smoked Double Burger', category: 'Gourmet', rating: '4.8', img: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=500&auto=format&fit=crop' },
             ].map((item) => (
               <div key={item.id} className="rounded-xl border border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 overflow-hidden shadow-xs">
