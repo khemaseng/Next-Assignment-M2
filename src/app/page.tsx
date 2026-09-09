@@ -234,9 +234,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: 'Sarah Jenkins', role: 'Food Critic', quote: 'The freshness of the seafood and attention to seasoning are completely unmatched.', img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop' },
-              { name: 'David Miller', role: 'Home Chef', quote: 'Finding recipes this detailed and authentic has transformed my weekend family dinners.', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop' },
-              { name: 'Emily Chen', role: 'Regular Customer', quote: 'Prompt delivery and restaurant-quality plating every single order!', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop' },
+              { name: 'Kiboy', role: 'Food Critic', quote: 'The freshness of the seafood and attention to seasoning are completely unmatched.', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPDKrswqzUzCPVJ2Etq5EiTbxCvRBjlJcpuyidiYhXH9y5MJJdITIZrgY&s=10' },
+              { name: 'Kairi', role: 'Home Chef', quote: 'Finding recipes this detailed and authentic has transformed my weekend family dinners.', img: 'https://atletiko.ph/wp-content/uploads/2023/07/kairi.jpg' },
+              { name: 'Aeronshiki', role: 'Regular Customer', quote: 'Prompt delivery and restaurant-quality plating every single order!', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC42_C3TQkhM8Umh8QDVHIEcv5FexAuYmXfl5n-MLgldJqflrnbprZmKAA&s=10' },
             ].map((t) => (
               <div key={t.name} className="p-6 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 space-y-4">
                 <p className="text-slate-600 dark:text-zinc-300 italic text-sm font-medium">"{t.quote}"</p>
