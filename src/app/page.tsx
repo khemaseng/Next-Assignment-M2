@@ -107,7 +107,7 @@ export default function Home() {
             <p className="text-slate-500 dark:text-zinc-400 text-sm font-medium">
               Find handcrafted meals organized for every craving and dietary requirement.
             </p>
-          </div>
+          </div>J
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
